@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/post.css" />
+
+    <title>Feed Sponser Post</title>
+</head>
+
+<body>
+    <header>
+        <div class="destop-nav d-flex justify-content-between align-items-center">
+            <div class="header-left">
+                <div class="back-arr">
+                    <img src="./img/left-arr.png" alt="">
+                </div>
+                <h3>Post Details</h3>
+            </div>
+            <div class="steps">
+                <div class="single-step step-active">
+                    <h3><span><img src="./img/iconamoon_check-bold.png" alt=""></span></h3>
+                    <p>Select Community</p>
+                </div>
+                <div class="single-step step-active">
+                    <h3><span><img src="./img/iconamoon_check-bold.png" alt=""></span></h3>
+                    <p>Upload Photo/Videos</p>
+                </div>
+                <div class="single-step step-active">
+                    <h3><span>3</span></h3>
+                    <p>Enter Post Details</p>
+                </div>
+                <div class="step-bar">
+                    <div class="step-progress step-3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="postDetailsBody">
+            <div class="postUpload-container">
+                <div class="postUpload-title">
+                    <h2>Post Details</h2>
+                </div>
+                <div class="postdetails-form">
+                    <h3>Details</h3>
+                    <form action="" class="form-container">
+                        <!-- Title -->
+                        <div class="post-something-form-group">
+                            <label for="title-input" class="post-something-form-label input-left">Title</label>
+                            <div class="input-wrapper input-right">
+                                <input type="text" placeholder="Company Name" id="title-input" class="form-input">
+                                <label for="title-input" class="input-icon">
+                                    <img src="./img/subway_title.png" alt="Title Icon">
+                                </label>
+                                <label for="title-input" class="postdetails-form-bar">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="post-something-form-group">
+                            <label for="phone-input" class="post-something-form-label input-left">Phone No.</label>
+                            <div class="input-wrapper input-right">
+                                <input type="tel" placeholder="Mobile Number" id="phone-input" class="form-input">
+                                <label for="phone-input" class="input-icon">
+                                    <img src="./img/call-calling.png" alt="Phone Icon">
+                                </label>
+                                <label for="phone-input" class="postdetails-form-bar">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="post-something-form-group">
+                            <label for="email-input" class="post-something-form-label input-left">Email (Optional)</label>
+                            <div class="input-wrapper input-right">
+                                <input type="email" placeholder="Enter Email" id="email-input" class="form-input">
+                                <label for="email-input" class="input-icon">
+                                    <img src="./img/sms.png" alt="Email Icon">
+                                </label>
+                                <label for="email-input" class="postdetails-form-bar">
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="post-something-form-group location-group">
+                            <div class="input-left">
+                                <label for="location-input" class="post-something-form-label">Add Location</label>
+                            </div>
+                            <div class="input-right location-wraper">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Enter Location" id="location-input"
+                                        class="form-input">
+                                    <label for="location-input" class="input-icon">
+                                        <img src="./img/locationform.png" alt="Location Icon">
+                                    </label>
+                                    <label for="location-input" class="postdetails-form-bar">
+                                    </label>
+                                </div>
+                                <div class="separator">
+                                    <span>or</span>
+                                </div>
+                                <div class="anywhere-button-wrapper">
+                                    <button type="button" class="anywhere-button">Anywhere</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="textarea-group">
+                            <label for="info-textarea" class="input-left textarea-label">Info</label>
+                            <div class="textarea-wrapper input-right">
+                                <textarea placeholder="Your Description" id="info-textarea" class="form-textarea"
+                                    rows="4"></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+            <!-- service select  -->
+            <div class="postUpload-container mt-4">
+                <div class="postdetails-form">
+                    <div class="service-select-title">
+                        <h3>Select Services</h3>
+                        <button>+ ADD</button>
+                    </div>
+                    <div>
+                        <div class="slect-total">
+                            <h4>For Sale</h4>
+                            <button>Select All</button>
+                        </div>
+                        <!-- for sell  -->
+                        <div>
+                            <div class="sell-btn-grp comunity-btns">
+                                <button id="comunity-btn-active">Phones</button>
+                                <button>Computer</button>
+                                <button>Phones</button>
+                                <button>Computer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slect-total">
+                            <h4>Jobs</h4>
+                            <button>Select All</button>
+                        </div>
+                        <!-- for sell  -->
+                        <div>
+                            <div class="sell-btn-grp comunity-btns">
+                                <button id="comunity-btn-active">Software Developer</button>
+                                <button>System Analyst</button>
+                                <button>Software Developer</button>
+                                <button>System Analyst</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="comunity-btns sell-btn-not-find">
+                                <button>Couldn't find the matched service</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- check-own-business  -->
+            <div class="check-own-business">
+                <input type="checkbox" id="checkOwn">
+                <label for="checkOwn">
+                    <span class="checkOwn-title">I own this business</span>
+                    <span class="checkOwn-txt">Only select this option if you are the owner of this business</span>
+                </label>
+            </div>
+            <!-- verify  -->
+             <div class="verify">
+                <!-- Email -->
+                <div class="post-something-form-group">
+                    <label for="email-input-verify" class="post-something-form-label input-left">Help us verify</label>
+                    <div class="input-wrapper input-right">
+                        <input type="email" placeholder="Enter Email" id="email-input-verify" class="form-input">
+                        <label for="email-input-verify" class="input-icon">
+                            <img src="./img/check.png" alt="Email Icon">
+                        </label>
+                        <label for="email-input-verify" class="postdetails-form-bar">
+                        </label>
+                        <span class="enter-business">Enter a business phone number or business email, to verify ownership</span>
+                    </div>
+                </div>
+             </div>
+            <div class="not-find">
+                <button class="saveBtn"  data-bs-target="#postModal" data-bs-toggle="modal">
+                    <span class="saveBtnTxt">Create Post</span>
+                    <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+                </button>
+                <button class="cancelbtn">Cancel</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="notificationOffcanvasLabel">Post As</h5>
+                <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./img/cross.png" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="postAs">
+                    <div class="postAs-bar">
+                    </div>
+                    <div class="postAs-body">
+                        <!-- single  -->
+                        <div class="postAs-body-item">
+                            <div class="postAs-option">
+                                <h3>Myself</h3>
+                                <img src="./img/right-arr1.png" alt="">
+                            </div>
+                            <p>Your name will be shown with the post, owner may reward you.</p>
+                        </div>
+                        <!-- single  -->
+                        <div class="postAs-body-item">
+                            <div class="postAs-option">
+                                <h3>Anonymous</h3>
+                                <img src="./img/right-arr1.png" alt="">
+                            </div>
+                            <p>Your name will not be shown to the public. Posterzs will however see your info.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>

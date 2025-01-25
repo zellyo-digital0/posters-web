@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/post.css" />
+
+    <title>Feed Sponser Post</title>
+</head>
+
+<body>
+    <header>
+        <div class="destop-nav d-none d-lg-flex justify-content-between align-items-center">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="./img/logo.png" class="img-fluid" alt="Logo">
+                </div>
+                <div class="nav-location">
+                    <img src="./img/location.png" class="img-fluid" alt="Menu">
+                    <span>New York, NY</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="seach">
+                    <form action="" class="navSearch">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="submit" class="search-icon"><img src="./img/search.png" class="img-fluid"
+                                alt="Search"></button>
+                    </form>
+                </div>
+                <div>
+                    <button class="nav-btn active-btn">
+                        <img src="./img/home.png" class="img-fluid" alt="Home">
+                    </button>
+                </div>
+                <div>
+                    <button class="nav-btn dashboard-btn">
+                        <img src="./img/dashboard.png" class="img-fluid" alt="Dashboard">
+                    </button>
+                </div>
+                <div>
+                    <button class="nav-btn notification-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#notificationOffcanvas" aria-controls="notificationOffcanvas">
+                        <img src="./img/notification-fill.png" class="img-fluid" alt="notification">
+                    </button>
+                </div>
+                <!-- nav profile img  -->
+                <div class="nav-profile">
+                    <button class="profile-btn" id="profileOptions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/avatar.png" class="img-fluid" alt="Profile">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="profileOptions">
+                        <!-- item 1 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/clarity_building-line.png" alt="">
+                                    <span>Setup Company Profile</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 2 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i2.png" alt="">
+                                    <span>My Ads</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 3 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i3.png" alt="">
+                                    <span>My Communities</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 4 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i4.png" alt="">
+                                    <span>Services</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 5 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i5.png" alt="">
+                                    <span>Chats</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 6 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i6.png" alt="">
+                                    <span>Wallet <span class="text-blue">$89.00</span></span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 7 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i7.png" alt="">
+                                    <span>Invite Friends</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 8 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i8.png" alt="">
+                                    <span>Faqs</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 9 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i9.png" alt="">
+                                    <span>Privacy Policy</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 10 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i10.png" alt="">
+                                    <span>Terms & Condition</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 11 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i11.png" alt="">
+                                    <span>Contact Us</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 12 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i12.png" alt="">
+                                    <span>Rate Us</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 13 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i13.png" alt="">
+                                    <span>Logout</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 14 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i14.png" alt="">
+                                    <span class="text-reprt">Delete Account</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li></span></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav d-flex d-lg-none justify-content-between align-items-center">
+            <a href="index.html" class="d-block mobile-logo">
+                <img src="./img/favicon.png" alt="logo" class="img-fluid">
+            </a>
+            <a href="index.html" class="d-block mobile-logo2">
+                <img src="./img/m-logo-2.png" alt="logo" class="img-fluid">
+            </a>
+            <button class="d-block mobile-search">
+                <img src="./img/search2.png" alt="search" class="img-fluid">
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="container">
+                <div class="row" id="dashboard-row">
+                    <!-- user profile  -->
+                    <div class="col-xl-3">
+                        <div class="user-profile">
+                            <!-- profile card  -->
+                            <div class="profile-card">
+                                <div class="profile-img">
+                                    </span> <img src="./img/seirra.png" class="img-fluid" alt="">
+                                    <div class="edit-icon">
+                                        <img src="./img/edit.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- profile details -->
+                                <h2>Sierra Ferguson</h2>
+                                <p>@sierraferguson</p>
+                                <a href="#" class="profile-link">
+                                    <img src="./img/link.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- profile-stats  -->
+                            <div class="profile-stats">
+                                <!-- single box  -->
+                                <div class="left-stats-box right-border">
+                                    <div class="stats-number">
+                                        <h3>11</h3>
+                                    </div>
+                                    <div class="stats-info">
+                                        <img src="./img/camera.png" alt="">
+                                        <span>Posts</span>
+                                    </div>
+                                </div>
+                                <span class="vr-bar"></span>
+                                <!-- single box  -->
+                                <div class="right-stats-box right-border">
+                                    <div class="stats-number">
+                                        <h3>18</h3>
+                                    </div>
+                                    <div class="stats-info">
+                                        <img src="./img/connect.png" alt="">
+                                        <span>Connects In</span>
+                                    </div>
+                                </div>
+                                <!-- single box  -->
+                                <div class="right-stats-box">
+                                    <div class="stats-number">
+                                        <h3>18</h3>
+                                    </div>
+                                    <div class="stats-info">
+                                        <img src="./img/connect.png" alt="">
+                                        <span>Connects In</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- button group -->
+                            <div class="btn-grp">
+                                <!-- single button  -->
+                                <button class="cs-btn">
+                                    <img src="./img/camera-blue.png" alt="">
+                                    <span>Post Something</span>
+                                </button>
+                                <!-- single button  -->
+                                <button class="cs-btn">
+                                    <img src="./img/doc.png" alt="">
+                                    <span>I'm Looking For</span>
+                                </button>
+                                <!-- single button  -->
+                                <button class="cs-btn">
+                                    <img src="./img/ad.png" alt="">
+                                    <span>Create Ad</span>
+                                </button>
+                            </div>
+                            <div class="btn-grp-bar"></div>
+                            <!-- profile-bottom-links -->
+                            <ul class="profile-bottom-links">
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policies</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQS</a>
+                                </li>
+                            </ul>
+                            <!-- profile-footer  -->
+                            <div class="pf-footer">
+                                <img src="./img/logo.png" alt="">
+                                <span>All Right Reserved 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content tab  -->
+                    <div class="col-xl-6">
+                        <div class="main-content">
+                            <div class="posts-feed">
+                                <!-- tab button  -->
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-posts-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-posts" type="button" role="tab"
+                                            aria-controls="pills-posts" aria-selected="true">Posts</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-requests-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-requests" type="button" role="tab"
+                                            aria-controls="pills-requests" aria-selected="false">Requests</button>
+                                    </li>
+                                </ul>
+                                <!-- tab content  -->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <!-- Posts tab content  -->
+                                    <div class="tab-pane fade show active" id="pills-posts" role="tabpanel"
+                                        aria-labelledby="pills-posts-tab">
+                                        <div class="post-cards">
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <h5>Claimed Post</h5>
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3>Sierra Ferguson</h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY . 1 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="post-text">
+                                                    Bethany was running in a half marathon when she began.... a half
+                                                    marathon when she began ...
+                                                    <a href="#">Read more</a>
+                                                </p>
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/post-img.png" class="img-fluid w-100" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale
+                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Event Planning</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                            <button class="btn-create-ad">Create Ad</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div
+                                                    class="post-actions d-flex align-items-center justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button"
+                                                            id="postActionsDropdown1" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        <ul class="dropdown-menu"
+                                                            aria-labelledby="postActionsDropdown1">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
+                                                            <li><a class="dropdown-item text-reprt" href="#">Report
+                                                                    Post</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <h5>Sponsored Post</h5>
+                                                <!-- author  -->
+                                                <div class="post-author">
+
+                                                    <div class="author-info">
+                                                        <h3>Company Name</h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY . 1 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h2 class="post-title">Advertisement title here.</h2>
+                                                <p class="post-text">
+                                                    Bethany was running in a half marathon when she began.... a half
+                                                    marathon when she began ...
+                                                    <a href="#">Read more</a>
+                                                </p>
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/post-img.png" class="img-fluid w-100" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale
+                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Event Planning</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                            <button class="btn-create-ad">Create Ad</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div
+                                                    class="post-actions d-flex align-items-center justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button"
+                                                            id="postActionsDropdown2" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        <ul class="dropdown-menu"
+                                                            aria-labelledby="postActionsDropdown2">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
+                                                            <li><a class="dropdown-item text-reprt" href="#">Report
+                                                                    Post</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Request tab content  -->
+                                    <div class="tab-pane fade" id="pills-requests" role="tabpanel"
+                                        aria-labelledby="pills-requests-tab">
+                                        <div class="post-cards">
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3>Sierra Ferguson</h3>
+                                                        <div class="author-loc">
+                                                            <span>1 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="post-text">
+                                                    Bethany was running in a half marathon when she began.... a half
+                                                    marathon when she began ...
+                                                    <a href="#">Read more</a>
+                                                </p>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Conference</span>
+                                                        <span>Network Engineer</span>
+                                                        <span>Product Launch</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                            <button class="btn-create-ad d-none d-lg-block">Send
+                                                                Message</button>
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-end d-lg-none msg-btn-mobile">
+                                                                <div class="interaction-item">
+                                                                    <img src="./img/chat.png" alt="Share">
+                                                                </div>
+                                                                <div class="interaction-item">
+                                                                    <img src="./img/bookmark.png" alt="Share">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div
+                                                    class="post-actions d-flex align-items-center justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button"
+                                                            id="postActionsDropdown3" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        <ul class="dropdown-menu"
+                                                            aria-labelledby="postActionsDropdown3">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
+                                                            <li><a class="dropdown-item text-reprt" href="#">Report
+                                                                    Post</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3>Sierra Ferguson</h3>
+                                                        <div class="author-loc">
+                                                            <span>1 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="post-text">
+                                                    Bethany was running in a half marathon when she began.... a half
+                                                    marathon when she began ...
+                                                    <a href="#">Read more</a>
+                                                </p>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Conference</span>
+                                                        <span>Network Engineer</span>
+                                                        <span>Product Launch</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                            <button class="btn-create-ad d-none d-lg-block">Send
+                                                                Message</button>
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-end d-lg-none msg-btn-mobile">
+                                                                <div class="interaction-item">
+                                                                    <img src="./img/chat.png" alt="Share">
+                                                                </div>
+                                                                <div class="interaction-item">
+                                                                    <img src="./img/bookmark.png" alt="Share">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div
+                                                    class="post-actions d-flex align-items-center justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button"
+                                                            id="postActionsDropdown4" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        <ul class="dropdown-menu"
+                                                            aria-labelledby="postActionsDropdown4">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
+                                                            <li><a class="dropdown-item text-reprt" href="#">Report
+                                                                    Post</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3>Sierra Ferguson</h3>
+                                                        <div class="author-loc">
+                                                            <span>1 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="post-text">
+                                                    Bethany was running in a half marathon when she began.... a half
+                                                    marathon when she began ...
+                                                    <a href="#">Read more</a>
+                                                </p>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Conference</span>
+                                                        <span>Network Engineer</span>
+                                                        <span>Product Launch</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                            <button class="btn-create-ad d-none d-lg-block">Send
+                                                                Message</button>
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-end d-lg-none msg-btn-mobile">
+                                                                <div class="interaction-item">
+                                                                    <img src="./img/chat.png" alt="Share">
+                                                                </div>
+                                                                <div class="interaction-item">
+                                                                    <img src="./img/bookmark.png" alt="Share">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div
+                                                    class="post-actions d-flex align-items-center justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button"
+                                                            id="postActionsDropdown5" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        <ul class="dropdown-menu"
+                                                            aria-labelledby="postActionsDropdown5">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
+                                                            <li><a class="dropdown-item text-reprt" href="#">Report
+                                                                    Post</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sponsored Posts Section -->
+                    <div class="col-xl-3">
+                        <div class="sponsored-posts">
+                            <h4>Sponsored Posts</h4>
+                            <div class="ads-lists">
+                                <!-- single ad card  -->
+                                <div class="ad-card">
+                                    <p>Sponsored Post</p>
+                                    <div class="ad-card-content">
+                                        <div class="ad-left">
+                                            <img src="./img/ad-img.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="ad-right">
+                                            <h3>Company Name</h3>
+                                            <div class="ad-location">
+                                                <img src="./img/ad-loc.png" alt="">
+                                                <span>New York, NY .</span>
+                                            </div>
+                                            <p>Advertisement title here.</p>
+                                            <div class="ad-link">
+                                                <img src="./img/link.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single ad card  -->
+                                <div class="ad-card">
+                                    <p>Sponsored Post</p>
+                                    <div class="ad-card-content">
+                                        <div class="ad-left">
+                                            <img src="./img/ad-img.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="ad-right">
+                                            <h3>Company Name</h3>
+                                            <div class="ad-location">
+                                                <img src="./img/ad-loc.png" alt="">
+                                                <span>New York, NY .</span>
+                                            </div>
+                                            <p>Advertisement title here.</p>
+                                            <div class="ad-link">
+                                                <img src="./img/link.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single ad card  -->
+                                <div class="ad-card">
+                                    <p>Sponsored Post</p>
+                                    <div class="ad-card-content">
+                                        <div class="ad-left">
+                                            <img src="./img/ad-img.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="ad-right">
+                                            <h3>Company Name</h3>
+                                            <div class="ad-location">
+                                                <img src="./img/ad-loc.png" alt="">
+                                                <span>New York, NY .</span>
+                                            </div>
+                                            <p>Advertisement title here.</p>
+                                            <div class="ad-link">
+                                                <img src="./img/link.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single ad card  -->
+                                <div class="ad-card">
+                                    <p>Sponsored Post</p>
+                                    <div class="ad-card-content">
+                                        <div class="ad-left">
+                                            <img src="./img/ad-img.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="ad-right">
+                                            <h3>Company Name</h3>
+                                            <div class="ad-location">
+                                                <img src="./img/ad-loc.png" alt="">
+                                                <span>New York, NY .</span>
+                                            </div>
+                                            <p>Advertisement title here.</p>
+                                            <div class="ad-link">
+                                                <img src="./img/link.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <!-- float menu for mobile  -->
+    <section class="float-location d-block d-lg-none">
+        <button>
+            <img src="./img/location-mobile.png" class="img-fluid" alt="">
+        </button>
+    </section>
+    <section class="float-menu d-flex d-lg-none align-items-center">
+        <a href="/feed-sponser-post.html" class="active-btn">
+            <img src="./img/home.png" class="img-fluid" alt="">
+        </a>
+        <a href="#">
+            <img src="./img/dashboard.png" class="img-fluid" alt="">
+        </a>
+        <a href="#">
+            <img src="./img/plus.png" class="img-fluid" alt="">
+        </a>
+        <a href="#">
+            <img src="./img/notification-fill.png" class="img-fluid" alt="">
+        </a>
+        <a href="#">
+            <img src="./img/profile-circle.png" class="img-fluid" alt="">
+        </a>
+    </section>
+
+    <!-- offcanvas notification  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notificationOffcanvas"
+        aria-labelledby="notificationOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="notificationOffcanvasLabel">Notifications</h5>
+            <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="./img/cross.png" alt="">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="notification-lists">
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                            <img src="./img/unred.png" class="w-100 img-fluid" alt="">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3>Zusia</h3>
+                                <p>Liked your service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-date">
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3>Zusia</h3>
+                                <p>Liked your service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-date">
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sucessModal" tabindex="-1" aria-labelledby="sucessModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="success-modal-body">
+                        <h2>Post Successful</h2>
+                    </div>
+                    <div class="success-modal-footer">
+                        <button class="cancelBtn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                        <button class="okBtn">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="./js/post.js"></script>
+    <!-- initially show modal  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const postModal = new bootstrap.Modal(document.getElementById('sucessModal'));
+            postModal.show();
+        });
+    </script>
+</body>
+
+</html>

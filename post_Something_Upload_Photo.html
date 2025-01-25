@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/post.css" />
+
+    <title>Feed Sponser Post</title>
+</head>
+
+<body>
+    <header>
+        <div class="destop-nav d-flex justify-content-between align-items-center">
+            <div class="header-left">
+                <div class="back-arr">
+                    <img src="./img/left-arr.png" alt="">
+                </div>
+                <h3>Post Details</h3>
+            </div>
+            <div class="steps">
+                <div class="single-step step-active">
+                    <h3><span><img src="./img/iconamoon_check-bold.png" alt=""></span></h3>
+                    <p>Select Community</p>
+                </div>
+                <div class="single-step step-active">
+                    <h3><span><img src="./img/iconamoon_check-bold.png" alt=""></span></h3>
+                    <p>Upload Photo/Videos</p>
+                </div>
+                <div class="single-step">
+                    <h3><span>3</span></h3>
+                    <p>Enter Post Details</p>
+                </div>
+                <div class="step-bar">
+                    <div class="step-progress step-2"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="postDetailsBody">
+            <div class="postUpload-container">
+                <div class="postUpload-title">
+                    <h2>Upload Photo</h2>
+                </div>
+                <div class="file-upload-container">
+                    <!-- File input container -->
+                    <div class="file-input-wrapper">
+                        <input type="file" class="file-input" id="file-upload" >
+                        <label for="file-upload" class="file-input-upload">
+                            <!-- Upload icon -->
+                            <span class="upload-icon">
+                                <img src="./img/upload.png" alt="Upload Icon" class="img-fluid w-100">
+                            </span>
+                        
+                            <!-- Drag and drop or browse text -->
+                            <span class="upload-instructions">
+                                Drag & Drop or Browse from <a href="here!" class="upload-link">here</a>
+                            </span>
+                        
+                            <!-- File requirements text -->
+                            <span class="upload-requirements">
+                                Photo: 1000px wide or more, JPEG, GIF, PNG, 1-Page TIFF
+                                Videos: Up to 5MB
+                            </span>
+                        </label>
+
+                    </div>
+                
+                    <!-- Uploaded photo preview container -->
+                    <div class="uploaded-photo-container">
+                        <div class="uploaded-photo-preview">
+                        </div>
+                        <p class="uploaded-nophoto-text">Uploaded profile image</p>
+                        <img src="./img/ant-design_delete-filled.png" alt="Delete Photo" class="delete-photo-icon">
+                    </div>
+                </div>
+
+            </div>
+            <div class="not-find">
+                <button class="saveBtn">
+                    <span class="saveBtnTxt">Save</span>
+                    <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+                </button>
+                <button class="cancelbtn">Cancel</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="./js/post.js"></script>
+</body>
+
+</html>
