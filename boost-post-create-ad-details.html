@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boost Post Create Ad Details</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+     <link rel="icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header id="headerFlow" class="shadow-sm">
+      <div class="container-fluid">
+        <div class="row header-flow-row align-items-center">
+          <div class="col ps-0 ps-xl-auto">
+            <div class="header-flow-left">
+              <div class="header-flow-left-inner">
+                <button class="header-flow-left-inner-button">
+                  <img src="./img/left-arrow.svg" alt="left-arrow" />
+                </button>
+                <span class="mx-auto d-xl-none d-block">Create Ad (Boost)</span>
+                <span class="me-auto d-xl-block d-none">Create Ad (Boost)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col d-xl-block d-none">
+            <div class="header-flow-right">
+              <div
+                class="progress-wrapper d-flex justify-content-between align-items-center"
+              >
+                <!-- step - 1 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner-active d-flex justify-content-center align-items-center"
+                    >
+                      <img src="./img/check.svg" alt="check" />
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span class="active">Create Ad (Boost)</span>
+                  </div>
+                </div>
+                <!-- step - 2 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner d-flex justify-content-center align-items-center"
+                    >
+                      <span>2</span>
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span>Select Location</span>
+                  </div>
+                </div>
+                <!-- step - 3 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner d-flex justify-content-center align-items-center"
+                    >
+                      <span>3</span>
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span>Payment</span>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main class="main-height">
+      <section class="flow-img d-block d-lg-none">
+        <div class="flow-img-wrapper">
+          <div class="flow-img">
+            <img
+              src="./img/creade-image-girl.png"
+              alt="flow-image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- communities start -->
+      <section class="flow" id="communities">
+        <div class="flow-container">
+          <div class="flow-communities">
+            <div class="row flow-row">
+              <div class="col-12">
+                <h2 class="flow-title">Select Communities</h2>
+              </div>
+              <div class="col-12">
+                <div class="row flow-button-row">
+                  <div class="col-4">
+                    <button class="flow-select-button flow-active-btn">
+                      My Community
+                    </button>
+                  </div>
+                  <div class="col-4">
+                    <button class="flow-select-button">All Communities</button>
+                  </div>
+                  <div class="col-4">
+                    <button class="flow-select-button">
+                      Choose Communities
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <form class="demofrom">
+                  <div class="input-group flow-input">
+                    <label class="input-group-icon"
+                      ><img src="./img/search-line.svg" alt="search"
+                    /></label>
+                    <input
+                      type="search"
+                      class="form-control"
+                      placeholder="Search Member"
+                      aria-label="search"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="col-12">
+                <div class="d-flex align-items-center">
+                  <div class="flow-tags">
+                    Community1
+                    <button class="flow-close">
+                      <img src="./img/xmark.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- boots timeline start -->
+      <section class="flow" id="bootsTimeline">
+        <div class="flow-container">
+          <div class="flow-communities">
+            <div class="row flow-row">
+              <!-- Bootstrap Accordion -->
+              <div class="accordion" id="boostAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button flow-title"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >Boost Timeline
+                    </button>
+                  </h2>
+
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#boostAccordion"
+                  >
+                    <div class="accordion-body">
+                      <form class="demofrom">
+                        <div class="row">
+                          <!-- Date Input -->
+                          <div class="col-4 d-md-block d-none">
+                            <div class="boots-input-title">
+                              <label for="datepicker">Enter Date</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-8">
+                            <div class="input-group boots-input mb-3">
+                              <span class="input-group-icon">
+                                <img
+                                  src="./img/simple-line-icons_calender.svg"
+                                  alt="calendar icon"
+                                />
+                              </span>
+                              <div class="divider-input"></div>
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="datepicker"
+                                placeholder="Start Date"
+                              />
+                            </div>
+                          </div>
+
+                          <!-- Days Dropdown -->
+                          <div class="col-4 d-md-block d-none"></div>
+                          <div class="col-12 col-md-8">
+                            <div class="dropdown mb-3">
+                              <button
+                                class="btn btn-secondary dropdown-toggle boots-select"
+                                type="button"
+                                id="dropdownMenuButton"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                Days
+                              </button>
+                              <ul
+                                class="boots-dropdown-menu dropdown-menu"
+                                aria-labelledby="dropdownMenuButton"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">Days</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Two</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Three</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Number of Days Input -->
+                          <div class="col-4 d-md-block d-none">
+                            <div class="boots-input-title">
+                              <label for="numDays">Number Of Days</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-8">
+                            <div class="input-group boots-input mb-3">
+                              <span class="input-group-icon">
+                                <img
+                                  src="./img/system-uicons_hash.svg"
+                                  alt="hash icon"
+                                />
+                              </span>
+                              <div class="divider-input"></div>
+                              <input
+                                type="number"
+                                min="1"
+                                class="form-control"
+                                id="numDays"
+                                placeholder="Enter how many days"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Accordion -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
