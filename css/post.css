@@ -1546,7 +1546,8 @@ header {
 }
 
 .input-wrapper .form-input:focus-visible,
-.textarea-wrapper .form-textarea:focus-visible {
+.textarea-wrapper .form-textarea:focus-visible,
+.verification-input:focus-visible {
   outline: none;
 }
 
@@ -1866,7 +1867,7 @@ header {
 }
 
 .registration-illustration {
-  width: 550px;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -1999,6 +2000,186 @@ header {
   width: 24px;
 }
 
+/* email_Verification  */
+.email-verification-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+
+.verification-input::-webkit-inner-spin-button,
+.verification-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove spinner for Firefox */
+.verification-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.verification-input {
+  width: 56px;
+  height: 70px;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  background: #F1F5F9;
+  box-shadow: inset 4px 4px 6px 0 #D7E4F0, inset -4px -4px 6px 0 #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.email-Verification-title {
+  text-align: center;
+}
+
+.email-Verification-title h3 {
+  color: #4A17CB;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.email-Verification-title p {
+  color: #222222;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.select-community-container {
+  padding-top: 40px;
+}
+
+.terms-condition {
+  background: #e3ebf4;
+  padding: 80px 0;
+  min-height: calc(100vh - 100px);
+}
+
+.terms-title {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.terms-section {
+  margin-top: 40px;
+  padding-left: 2px;
+}
+
+.terms-heading {
+  color: #000;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.terms-text {
+  font-weight: 500;
+  font-size: 24px;
+  color: #212B27;
+  margin-top: 16px;
+}
+
+.terms-nav {
+  position: relative;
+}
+
+.back-arr-terms {
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#createComunityOffcanvas {
+  width: 582px;
+}
+
+.createComunityLabel {}
+
+.createComunityLabel h5 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.createComunityLabel p {
+  color: #747474;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.createComunityoffcanvas-header {
+  gap: 80px;
+  padding: 60px 40px 30px;
+  align-items: baseline;
+}
+
+.createComunityoffcanvas-header button {
+  border: none;
+  background: transparent;
+}
+
+.createComunityForm {
+  padding: 0 20px;
+}
+
+.createComunityForm form {
+  padding: 40px 60px 0;
+}
+
+.comunity-image-upload-wrapper {
+  padding-bottom: 20px;
+}
+
+.comunity-image-upload-label {
+  border: 1px dashed #5A5A5A;
+  height: 120px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.comunity-image-upload-preview {
+  height: 120px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+
+}
+
+.comunity-image-upload-preview img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.uploadIconComunity {
+  width: 24px;
+}
+
+.uploadTextcomunity {
+  color: #4A17CB;
+  font-size: 14px;
+}
+
+.remove-img {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 24px;
+  cursor: pointer;
+}
+
 /* 
 
 
@@ -2104,6 +2285,11 @@ header {
 
   .postUpload-container {
     padding: 50px;
+  }
+
+  .verification-input {
+    width: 35px;
+    height: 40px;
   }
 
 }
@@ -2449,6 +2635,48 @@ header {
     width: 150px;
     margin-bottom: 10px;
   }
+
+  .terms-condition {
+    padding: 40px 0;
+  }
+
+  .terms-heading {
+    font-size: 26px;
+  }
+
+  .terms-section {
+    margin-top: 20px;
+  }
+
+  .terms-text {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .terms-nav .logo {
+    margin-left: 50px;
+  }
+
+  .back-arr-terms {
+    left: 0;
+  }
+
+  .createComunityoffcanvas-header {
+    gap: 40px;
+    padding: 20px 20px 0;
+  }
+
+  .createComunityForm {
+    padding: 0;
+  }
+
+  #createComunityOffcanvas {
+    width: 50%;
+  }
+
+  .createComunityForm form {
+    padding: 20px 30px 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2505,6 +2733,23 @@ header {
   .enter-business {
     bottom: -26px;
   }
+
+  .email-Verification-title h3 {
+    font-size: 24px;
+  }
+
+  .email-Verification-title p {
+    font-size: 14px;
+    margin-top: 3px;
+  }
+
+  .email-verification-input {
+    padding-bottom: 25px;
+  }
+
+  #createComunityOffcanvas {
+    width: 90%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2553,6 +2798,10 @@ header {
 
   .registration-section {
     padding-bottom: 40px;
+  }
+
+  .registration-illustration {
+    width: 250px;
   }
 }
 
