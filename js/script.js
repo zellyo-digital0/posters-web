@@ -20,41 +20,49 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-// upload area
-  const uploadArea = document.getElementById("uploadArea");
-  const fileInput = document.getElementById("fileInput");
-  const fileNameDisplay = document.getElementById("file-name");
+// Configure upload areas
+const uploadConfig = [
+  { id: 'mainUploadArea', inputId: 'mainImageInput', displayId: 'mainFileName' },
+  { id: 'imageUpload1', inputId: 'imageInput1', displayId: 'imageFileName1' },
+  { id: 'imageUpload2', inputId: 'imageInput2', displayId: 'imageFileName2' },
+  { id: 'videoUpload1', inputId: 'videoInput1', displayId: 'videoFileName1' },
+  { id: 'videoUpload2', inputId: 'videoInput2', displayId: 'videoFileName2' }
+];
 
-  uploadArea.addEventListener("click", () => {
-    fileInput.click();
+// Initialize all upload areas
+uploadConfig.forEach(config => {
+  const uploadArea = document.getElementById(config.id);
+  const fileInput = document.getElementById(config.inputId);
+  const fileNameDisplay = document.getElementById(config.displayId);
+
+  // Click handler
+  uploadArea.addEventListener('click', () => fileInput.click());
+
+  // Input change handler
+  fileInput.addEventListener('change', (e) => showFileName(e.target.files, fileNameDisplay));
+
+  // Drag and drop handlers
+  uploadArea.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadArea.classList.add('active');
   });
 
-  fileInput.addEventListener("change", (event) => {
-    showFileName(event.target.files);
+  uploadArea.addEventListener('dragleave', () => {
+    uploadArea.classList.remove('active');
   });
 
-  uploadArea.addEventListener("dragover", (event) => {
-    event.preventDefault();
-    uploadArea.classList.add("active");
+  uploadArea.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadArea.classList.remove('active');
+    fileInput.files = e.dataTransfer.files;
+    showFileName(fileInput.files, fileNameDisplay);
   });
+});
 
-  uploadArea.addEventListener("dragleave", () => {
-    uploadArea.classList.remove("active");
-  });
-
-  uploadArea.addEventListener("drop", (event) => {
-    event.preventDefault();
-    uploadArea.classList.remove("active");
-
-    let files = event.dataTransfer.files;
-    fileInput.files = files; // Assign files to input
-    showFileName(files);
-  });
-
-  function showFileName(files) {
-    if (files.length > 0) {
-      fileNameDisplay.textContent = `Selected: ${files[0].name}`;
-    } else {
-      fileNameDisplay.textContent = "";
-    }
+function showFileName(files, displayElement) {
+  if (files.length > 0) {
+    displayElement.textContent = `Selected: ${files[0].name}`;
+  } else {
+    displayElement.textContent = '';
   }
+}

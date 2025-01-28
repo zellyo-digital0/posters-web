@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Create Ad Upload Pic</title>
+    <title>Create Ad Connect to Existing Company Verify</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <!-- font -->
@@ -51,7 +51,7 @@
                     <div
                       class="step-circle-inner-active d-flex justify-content-center align-items-center"
                     >
-                      <span class="actives">1</span>
+                      <img src="./img/check.svg" alt="check" class="img-active"/>
                     </div>
                   </div>
                   <div class="step-title">
@@ -66,13 +66,13 @@
                     class="step-circle d-flex justify-content-center align-items-center"
                   >
                     <div
-                      class="step-circle-inner d-flex justify-content-center align-items-center"
+                      class="step-circle-inner-active d-flex justify-content-center align-items-center"
                     >
-                      <span>2</span>
+                      <span class="actives">2</span>
                     </div>
                   </div>
                   <div class="step-title">
-                    <span>Enter Details</span>
+                    <span class="active">Enter Details</span>
                   </div>
                 </div>
                 <!-- step - 3 -->
@@ -96,7 +96,7 @@
                   <div
                     class="progress-bar"
                     role="progressbar"
-                    style="width: 0%"
+                    style="width: 50%"
                     aria-valuenow="100"
                     aria-valuemin="0"
                     aria-valuemax="100"
@@ -117,137 +117,84 @@
           <div class="upload-communities">
             <div class="row flow-row">
               <div class="col-12">
-                <div class="locations-title-wrapper">
-                  <h1 class="flow-location-title">Upload Photo</h1>
+                <div class="d-flex justify-content-center">
+                  <h2 class="create-title create-title-space">
+                    Connect to Existing Company
+                  </h2>
                 </div>
-              </div>
-              <div class="col-12">
-                <div class="upload-wrapper">
-                  <!-- Main Image Upload -->
+                <form class="create-wrapper mx-auto">
                   <div class="row">
-                    <div class="col-12 px-2 pb-3">
-                      <div
-                        class="upload-main d-flex justify-content-center align-items-center flex-column"
-                        id="mainUploadArea"
-                      >
-                        <input
-                          type="file"
-                          id="mainImageInput"
-                          accept="image/*"
-                          class="d-none"
-                        />
-                        <div class="upload-img">
-                          <img
-                            src="./img/tabler_upload.svg"
-                            alt="upload"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-center upload-area-text">
-                          Post Image<br />(Primary)
-                        </p>
-                        <span class="file-name" id="mainFileName"></span>
+                    <!-- Date Input -->
+                    <div class="col-3 d-md-block d-none">
+                      <div class="boots-input-title">
+                        <label for="titles">Ad Title</label>
                       </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                      <div class="input-group boots-input w-full">
+                        <span class="input-group-icon">
+                          <img
+                            src="./img/bi_building-fill.svg"
+                            alt="calendar icon"
+                          />
+                        </span>
+                        <div class="divider-input"></div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="titles"
+                          placeholder="Company Name"
+                        />
+                      </div>
+                    </div>
+                    <!-- check Input -->
+                    <div class="col-3 d-md-block d-none"></div>
+                    <div class="col-12 col-md-9">
+                      <div class="form-check createform-check-two d-flex align-items-center">
+                        <input
+                          class="form-check-input create-checkbox"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label create-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    </div>
+                     <!-- Date Input -->
+                    <div class="col-3 d-md-block d-none">
+                      <div class="boots-input-title">
+                        <label for="verifys">Verify</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                      <div class="input-group boots-input w-full">
+                        <span class="input-group-icon">
+                          <img
+                            src="./img/bitcoin-icons_verify-outline.svg"
+                            alt="calendar icon"
+                          />
+                        </span>
+                        <div class="divider-input"></div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="verifys"
+                          placeholder="Enter email or mobile number"
+                        />
+                      </div>
+                    </div>
+                     <!-- verify txt Input -->
+                    <div class="col-3 d-md-block d-none">
+                      <div class="boots-input-title">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                      <p class="verify-text">Help us verify you as a owner, via e-mail or mobile</p>
                     </div>
                   </div>
-
-                  <!-- Secondary Images -->
-                  <div class="row secondary-images">
-                    <div class="col-md-3 px-2">
-                      <div
-                        class="upload-secondary d-flex justify-content-center align-items-center flex-column"
-                        id="imageUpload1"
-                      >
-                        <input
-                          type="file"
-                          id="imageInput1"
-                          accept="image/*"
-                          class="d-none"
-                        />
-                        <div class="upload-img">
-                          <img
-                            src="./img/tabler_upload.svg"
-                            alt="upload"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-center upload-area-text">Post Image</p>
-                        <span class="file-name" id="imageFileName1"></span>
-                      </div>
-                    </div>
-                    <div class="col-md-3 px-2">
-                      <div
-                        class="upload-secondary d-flex justify-content-center align-items-center flex-column"
-                        id="imageUpload2"
-                      >
-                        <input
-                          type="file"
-                          id="imageInput2"
-                          accept="image/*"
-                          class="d-none"
-                        />
-                        <div class="upload-img">
-                          <img
-                            src="./img/tabler_upload.svg"
-                            alt="upload"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-center upload-area-text">Post Image</p>
-                        <span class="file-name" id="imageFileName2"></span>
-                      </div>
-                    </div>
-                    <div class="col-md-3 px-2">
-                      <div
-                        class="upload-secondary d-flex justify-content-center align-items-center flex-column"
-                        id="videoUpload1"
-                      >
-                        <input
-                          type="file"
-                          id="videoInput1"
-                          accept="video/*"
-                          class="d-none"
-                        />
-                        <div class="upload-img">
-                          <img
-                            src="./img/tabler_upload.svg"
-                            alt="upload"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-center upload-area-text">Post Video</p>
-                        <span class="file-name" id="videoFileName1"></span>
-                      </div>
-                    </div>
-                    <div class="col-md-3 px-2">
-                      <div
-                        class="upload-secondary d-flex justify-content-center align-items-center flex-column"
-                        id="videoUpload2"
-                      >
-                        <input
-                          type="file"
-                          id="videoInput2"
-                          accept="video/*"
-                          class="d-none"
-                        />
-                        <div class="upload-img">
-                          <img
-                            src="./img/tabler_upload.svg"
-                            alt="upload"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-center upload-area-text">Post Video</p>
-                        <span class="file-name" id="videoFileName2"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="add-more-button d-flex justify-content-center">
-                  <button>+ Add More</button>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -257,7 +204,7 @@
             class="upload-button-wrapper d-flex justify-content-center flex-column"
           >
             <button class="upload-buttom-top">
-              Save <img src="./img/Arrow Forward.svg" alt="Arrow" />
+              Save & Next <img src="./img/Arrow Forward.svg" alt="Arrow" />
             </button>
             <button class="upload-buttom-bottom">Cancel</button>
           </div>

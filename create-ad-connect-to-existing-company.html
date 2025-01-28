@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create Ad Connect to Existing Company</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="icon" href="./img/favicon.ico" />
+  </head>
+  <body class="flow-body">
+    <!-- header start -->
+    <header id="headerFlow" class="shadow-sm">
+      <div class="container-fluid">
+        <div class="row header-flow-row align-items-center">
+          <div class="col ps-0 ps-xl-auto">
+            <div class="header-flow-left">
+              <div class="header-flow-left-inner">
+                <button class="header-flow-left-inner-button">
+                  <img src="./img/left-arrow.svg" alt="left-arrow" />
+                </button>
+                <span class="mx-auto d-xl-none d-block">Create Ad</span>
+                <span class="me-auto d-xl-block d-none">Create Ad</span>
+              </div>
+            </div>
+          </div>
+          <div class="col d-xl-block d-none">
+            <div class="header-flow-right">
+              <div
+                class="progress-wrapper d-flex justify-content-between align-items-center"
+              >
+                <!-- step - 1 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner-active d-flex justify-content-center align-items-center"
+                    >
+                      <img src="./img/check.svg" alt="check" class="img-active"/>
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span class="active">Upload Photo</span>
+                  </div>
+                </div>
+                <!-- step - 2 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner-active d-flex justify-content-center align-items-center"
+                    >
+                      <span class="actives">2</span>
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span class="active">Enter Details</span>
+                  </div>
+                </div>
+                <!-- step - 3 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner d-flex justify-content-center align-items-center"
+                    >
+                      <span>3</span>
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span>Set CTA & Pay</span>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <!-- upload start -->
+      <section class="flow" id="uploads">
+        <div class="upload-container">
+          <div class="upload-communities">
+            <div class="row flow-row">
+              <div class="col-12">
+                <div class="d-flex justify-content-center">
+                  <h2 class="create-title create-title-space">
+                    Connect to Existing Company
+                  </h2>
+                </div>
+                <form class="create-wrapper mx-auto">
+                  <div class="row">
+                   <!-- Date Input -->
+                    <div class="col-3 d-md-block d-none">
+                      <div class="boots-input-title">
+                        <label for="titles">Ad Title</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                      <div class="input-group boots-input w-full">
+                        <span class="input-group-icon">
+                          <img
+                            src="./img/bi_building-fill.svg"
+                            alt="calendar icon"
+                          />
+                        </span>
+                        <div class="divider-input"></div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="titles"
+                          placeholder="Company Name"
+                        />
+                      </div>
+                    </div>
+                    <!-- Date Input -->
+                    <div class="col-3 d-md-block d-none"></div>
+                    <div class="col-12 col-md-9">
+                      <div class="form-check createform-check d-flex align-items-center">
+                        <input
+                          class="form-check-input create-checkbox"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label create-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-location-container button-upload-container">
+          <div
+            class="upload-button-wrapper d-flex justify-content-center flex-column"
+          >
+            <button class="upload-buttom-top">
+              Save & Next <img src="./img/Arrow Forward.svg" alt="Arrow" />
+            </button>
+            <button class="upload-buttom-bottom">Cancel</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
